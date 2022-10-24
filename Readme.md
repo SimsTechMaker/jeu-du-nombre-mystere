@@ -3,7 +3,7 @@
 ## How to games
 
 1-) Get Python Python 3.10.4  
-2-) Clonne pojet on your computer or deanlowd the zip file  
+2-) Clonne pojet on your computer  
 3-) run pip install kivy  
 4-) enjoin !
 ## Demo 
