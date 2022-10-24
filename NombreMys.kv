@@ -1,0 +1,86 @@
+MainLaout:
+<MainLaout>:
+    orientation : "vertical"
+    ImgeLaout:
+    GameLaout:
+
+
+<ImgeLaout@BoxLayout>:
+
+    AnchorLayout:
+        anchor_y : "bottom"
+        # anchor_y : "top"
+        #orientation : "vertical"
+        Image:
+            source : "photo.jpg"
+            size_hint : None, None
+            height : "531"
+            width : "430"
+            pos_hint : {"center_x":.5}
+        Label:
+            text : "Jeu du nombre mystère"
+            font_name : "fonts/Foco_Blk"
+            font_size :"40"
+            color : "#3A6BEB"
+            size_hint : None, None
+            height : "62"
+            width : "406"
+            #pos_hint : {"top":.5}
+            
+            background_color: (0,0,10,1)
+
+<GameLaout>:
+    anchor_x : "center"
+    anchor_y : "top"
+
+    orientation : "vertical"
+    Label :
+        text : root.mon_texte
+        font_name : "fonts/Foco_Blk.ttf"
+        font_size : "25"
+    Button :
+        text : "Trouver le nombre"
+        font_name : "fonts/Foco_Blk.ttf"
+        font_size : "40"
+    TextInput : 
+        text : "123456"
+        multiline : False
+        on_text_validate : root.ver(self)
+        font_name : "fonts/Foco_Blk.ttf"
+        font_size : "40"
+        size_hint : .45, None
+        pos_hint : {"center_x":.5}
+    Button : 
+        text : "Valide"
+        on_press : root.clic_bn()
+        size_hint : .25, None
+        height : "75dp"
+        pos_hint : {"center_x":.5}
+
+
+
+
+<zoneLaout>:
+    orientation: "vertical"
+    Button:
+        text: "A"
+    Button:
+        text: "C"
+        size_hint: .75 , None
+        #height: "350dp"
+        pos_hint: {"center_x": .5} 
+    BoxLayout:
+        orientation : "vertical"
+        Label:
+            text:"Jeu du nombre mystere"
+        Label:
+            text:""
+        Label:
+            text: "Trouve le nombre"
+        Button:
+            text:"158"
+        Button:
+            text: "✅"
+
+
+    
